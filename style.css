@@ -1,0 +1,53 @@
+/* "Web design is my passion 🥺👉👈" CSS */
+
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 600px;
+    margin: 15vh auto;
+    padding: 24px;
+}
+
+h1 span,
+main > p:first-child {
+    color: cyan;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+}
+
+.links a,
+.links button {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid cyan;
+    background: transparent;
+    color: cyan;
+    text-align: center;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.links a:hover,
+.links button:hover {
+    background: cyan;
+    color: #111;
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .links {
+        flex-direction: column;
+    }
+}
