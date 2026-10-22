@@ -19,18 +19,23 @@ main > p:first-child {
 }
 
 .links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    max-width: 400px;
+    max-width: 480px;
 }
 
 .links a,
 .links button {
-    flex: 1;
-    padding: 14px;
+    height: 52px;
+    box-sizing: border-box;
+    padding: 8px;
     border: 1px solid cyan;
     background: transparent;
     color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     font: inherit;
@@ -46,8 +51,18 @@ main > p:first-child {
     opacity: 1;
 }
 
+.links a.axiom {
+    border-color: gold;
+    color: gold;
+}
+
+.links a.axiom:hover {
+    background: gold;
+    color: #111;
+}
+
 @media (max-width: 500px) {
     .links {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
