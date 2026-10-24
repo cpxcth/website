@@ -1,5 +1,9 @@
 /* "Web design is my passion 🥺👉👈" CSS */
 
+html {
+    background: #111;
+}
+
 body {
     margin: 0;
     background: #111;
@@ -11,6 +15,10 @@ main {
     max-width: 600px;
     margin: 15vh auto;
     padding: 24px;
+}
+
+h3{
+    color: rgb(0, 200, 200);
 }
 
 h1 span,
@@ -25,8 +33,7 @@ main > p:first-child {
     max-width: 480px;
 }
 
-.links a,
-.links button {
+.links a {
     height: 52px;
     box-sizing: border-box;
     padding: 8px;
@@ -44,8 +51,7 @@ main > p:first-child {
     transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.links a:hover,
-.links button:hover {
+.links a:hover {
     background: cyan;
     color: #111;
     opacity: 1;
@@ -61,6 +67,9 @@ main > p:first-child {
     color: #111;
 }
 
+.code {
+    color: rgb(0, 200, 200);
+}
 @media (max-width: 500px) {
     .links {
         grid-template-columns: 1fr;
