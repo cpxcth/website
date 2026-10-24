@@ -33,7 +33,8 @@ main > p:first-child {
     max-width: 480px;
 }
 
-.links a {
+.links a,
+.links button {
     height: 52px;
     box-sizing: border-box;
     padding: 8px;
@@ -51,7 +52,8 @@ main > p:first-child {
     transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.links a:hover {
+.links a:hover,
+.links button:hover {
     background: cyan;
     color: #111;
     opacity: 1;
