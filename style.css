@@ -1,12 +1,17 @@
 /* "Web design is my passion 🥺👉👈" CSS */
 
-html {
+html,
+body,
+main {
     background: #111;
+}
+
+html {
+    min-height: 100%;
 }
 
 body {
     margin: 0;
-    background: #111;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -50,6 +55,11 @@ main > p:first-child {
     cursor: pointer;
     opacity: 0.75;
     transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.links button {
+    appearance: none;
+    border-radius: 0;
 }
 
 .links a:hover,
