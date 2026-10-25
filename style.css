@@ -31,6 +31,10 @@ main > p:first-child {
     color: cyan;
 }
 
+p{
+    font-size: small;
+}
+
 .links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
