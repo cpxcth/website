@@ -19,11 +19,11 @@ async function copyKey() {
         } else {
             pgpButton.textContent = "Copy failed";
         }
-    } catch { // AI told me to do this
+    } catch {
         pgpButton.textContent = "Copy failed";
     }
 
-    setTimeout(resetButton, 2000);
+    setTimeout(resetButton, 2300);
 }
 
 
